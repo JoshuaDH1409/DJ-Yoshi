@@ -1,5 +1,5 @@
 # Build stage
-FROM node:22.21-alpine AS builder
+FROM node:22.22-alpine AS builder
 
 WORKDIR /app
 
@@ -10,7 +10,7 @@ COPY package*.json ./
 RUN npm ci --omit=dev --ignore-engines
 
 # Production stage
-FROM node:22.21-alpine
+FROM node:22.22-alpine
 
 # Add runtime dependencies
 RUN apk add --no-cache tini
