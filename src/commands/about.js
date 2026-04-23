@@ -28,9 +28,11 @@ module.exports = {
         const { client } = interaction;
         const lang = client.defaultLanguage;
 
-        logger.cmd(`/about by ${interaction.user.tag} in #${interaction.channel.name} (Guild: ${interaction.guild.name})`);
+        const channelName = interaction.channel?.name ?? 'DM';
+        const guildName = interaction.guild?.name ?? 'DM';
+        logger.cmd(`/about by ${interaction.user.tag} in #${channelName} (Guild: ${guildName})`);
 
-                await interaction.deferReply({ ephemeral: true });
+        await interaction.deferReply({ ephemeral: true });
 
         
 

@@ -20,8 +20,19 @@ async function deployCommands(client) {
     const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
 
     try {
-        logger.info(`Refreshing ${commands.length} application (/) commands globally.`);
+        const guildId = process.env.GUILD_ID;
 
+        if (guildId) {
+            logger.info(`Refreshing ${commands.length} application (/) commands for guild ${guildId}.`);
+            const data = await rest.put(
+                Routes.applicationGuildCommands(client.user.id, guildId),
+                { body: commands },
+            );
+            logger.info(`Successfully registered ${data.length} application (/) commands for guild ${guildId}.`);
+            return;
+        }
+
+        logger.info(`Refreshing ${commands.length} application (/) commands globally.`);
         const data = await rest.put(
             Routes.applicationCommands(client.user.id),
             { body: commands },
