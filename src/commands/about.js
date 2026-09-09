@@ -38,7 +38,7 @@ module.exports = {
 
                 const embed = new EmbedBuilder()
 
-                    .setColor(0x0099FF)
+                    .setColor(0x7C3AED)
 
                     .setTitle(client.languageManager.get(lang, 'ABOUT_TITLE'))
 
@@ -78,7 +78,7 @@ module.exports = {
 
                         }
 
-                    )            .setFooter({ text: 'BeatDock - High-Quality Music Experience' })
+                    )            .setFooter({ text: 'PulseBot — High-Quality Music Experience' })
             .setTimestamp();
 
         const row = new ActionRowBuilder()
@@ -86,12 +86,12 @@ module.exports = {
                 new ButtonBuilder()
                     .setLabel('GitHub Repository')
                     .setStyle(ButtonStyle.Link)
-                    .setURL('https://github.com/lazaroagomez/BeatDock')
+                    .setURL('https://github.com/JoshuaDH1409/DJ-Yoshi')
                     .setEmoji('⭐'),
                 new ButtonBuilder()
                     .setLabel('Report an Issue')
                     .setStyle(ButtonStyle.Link)
-                    .setURL('https://github.com/lazaroagomez/BeatDock/issues')
+                    .setURL('https://github.com/JoshuaDH1409/DJ-Yoshi/issues')
                     .setEmoji('🐛')
             );
 

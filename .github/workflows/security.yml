@@ -37,11 +37,11 @@ jobs:
         
     # Build the Docker image locally so the subsequent image scan has an image to analyse
     - name: Build Docker image for scan
-      run: docker build -t beatdock:latest .
+      run: docker build -t pulsebot:latest .
         
     - name: Docker security scan
       uses: aquasecurity/trivy-action@master
       with:
         scan-type: 'image'
-        image-ref: 'beatdock:latest'
+        image-ref: 'pulsebot:latest'
         format: 'table' 

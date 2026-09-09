@@ -1,5 +1,5 @@
 /**
- * BeatDock Documentation - Interactive Features
+ * PulseBot Documentation - Interactive Features
  * Cyberpunk Gaming Theme with Discord Aesthetics
  */
 
@@ -21,7 +21,7 @@ function fetchVersion() {
     const versionElement = document.getElementById('version');
     if (!versionElement) return;
 
-    fetch('https://raw.githubusercontent.com/lazaroagomez/BeatDock/main/package.json')
+    fetch('https://raw.githubusercontent.com/JoshuaDH1409/DJ-Yoshi/main/package.json')
         .then(response => {
             if (!response.ok) throw new Error('Failed to fetch');
             return response.json();
@@ -342,6 +342,6 @@ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 /**
  * Console Easter Egg
  */
-console.log('%c BeatDock ', 'background: linear-gradient(135deg, #5865F2, #ff006e); color: white; font-size: 24px; font-weight: bold; padding: 10px 20px; border-radius: 8px;');
+console.log('%c PulseBot ', 'background: linear-gradient(135deg, #5865F2, #ff006e); color: white; font-size: 24px; font-weight: bold; padding: 10px 20px; border-radius: 8px;');
 console.log('%c Drop the beat. Control the vibe. ', 'color: #00ff88; font-size: 14px;');
-console.log('%c https://github.com/lazaroagomez/BeatDock ', 'color: #5865F2;');
+console.log('%c https://github.com/JoshuaDH1409/DJ-Yoshi ', 'color: #5865F2;');

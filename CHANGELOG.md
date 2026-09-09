@@ -1,8 +1,19 @@
 # Changelog
 
-All notable changes to BeatDock are documented in this file.
+All notable changes to this project are documented in this file.
+
+> **Note:** History through **2.7.4** comes from upstream [BeatDock](https://github.com/lazaroagomez/BeatDock) by Lazaro Gomez.
+> From the PulseBot portfolio rebrand onward, changes apply to this fork ([JoshuaDH1409/DJ-Yoshi](https://github.com/JoshuaDH1409/DJ-Yoshi)).
 
 Format based on [Keep a Changelog](https://keepachangelog.com/). This project uses [Semantic Versioning](https://semver.org/).
+
+## [Unreleased] — PulseBot portfolio
+
+### Changed
+- Rebranded display name and package to **PulseBot** (portfolio fork of BeatDock)
+- README rewritten for CV/portfolio use with honest upstream credit
+- Docker container/network names, docs site, locales, and GitHub meta updated to this repository
+- Added `NOTICE` with Apache-2.0 attribution to BeatDock / Lazaro Gomez
 
 ## [2.7.4] - 2026-03-22
 

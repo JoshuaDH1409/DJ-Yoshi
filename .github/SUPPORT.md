@@ -1,19 +1,19 @@
 # Support
 
-Need help with BeatDock? Here's where to go.
+Need help with **PulseBot**? Here's where to go.
 
-## Getting help
+## This repository (portfolio fork)
 
-- **Bug reports** - [open an issue](https://github.com/lazaroagomez/BeatDock/issues/new?template=bug_report.yml)
-- **Feature ideas** - [open a feature request](https://github.com/lazaroagomez/BeatDock/issues/new?template=feature_request.yml)
-- **General questions** - [start a discussion](https://github.com/lazaroagomez/BeatDock/discussions)
+- **Bug reports** - [open an issue](https://github.com/JoshuaDH1409/DJ-Yoshi/issues/new?template=bug_report.yml)
+- **Feature ideas** - [open a feature request](https://github.com/JoshuaDH1409/DJ-Yoshi/issues/new?template=feature_request.yml)
+
+## Upstream BeatDock
+
+PulseBot is based on [BeatDock](https://github.com/lazaroagomez/BeatDock) by Lazaro Gomez.
+For upstream discussions and historical issues, see the [BeatDock repository](https://github.com/lazaroagomez/BeatDock).
 
 ## Before opening an issue
 
-1. Check the [README](../README.md), especially the Configuration and Troubleshooting sections.
-2. Search [existing issues](https://github.com/lazaroagomez/BeatDock/issues) to see if it's already been reported.
-3. Make sure you're on the latest version (`docker compose pull && docker compose up -d`).
-
-## Security vulnerabilities
-
-**Do not open a public issue.** See [SECURITY.md](SECURITY.md) for how to report them privately.
+1. Check the [README](../README.md) troubleshooting section.
+2. Search [existing issues](https://github.com/JoshuaDH1409/DJ-Yoshi/issues).
+3. Include logs, Docker/OS versions, and steps to reproduce.
