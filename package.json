@@ -1,7 +1,7 @@
 {
   "name": "pulsebot",
   "version": "2.7.4",
-  "description": "PulseBot \u2014 Discord music bot (portfolio fork of BeatDock). Node.js, Discord.js, Lavalink, Docker.",
+  "description": "PulseBot — bot de música para Discord (fork de BeatDock). Node.js, Discord.js, Lavalink, Docker.",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
@@ -24,7 +24,7 @@
     "nodejs",
     "portfolio"
   ],
-  "author": "JoshuaDH1409 (fork); original BeatDock by L\u00e1zaro <lazaro98@duck.com>",
+  "author": "JoshuaDH1409 (fork); original BeatDock by Lázaro <lazaro98@duck.com>",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
