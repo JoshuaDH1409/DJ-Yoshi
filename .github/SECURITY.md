@@ -1,21 +1,12 @@
 # Security Policy
 
-## Supported Versions
-I only provide support and security updates for the latest version of BeatDock. Please ensure you are using the most recent release.
-
-| Version | Supported |
-| ------- | --------- |
-| latest  | ✅ |
-| older versions | ❌ |
+Security updates for this **PulseBot** portfolio fork focus on the latest `main` branch.
 
 ## Reporting a Vulnerability
-If you believe you have found a security vulnerability, please **do not open a public Issue**.
 
-Instead, choose one of the following private channels:
+1. **Do not** open a public issue for security vulnerabilities.
+2. Report privately via [GitHub Security Advisories](https://github.com/JoshuaDH1409/DJ-Yoshi/security/advisories/new) on this repository.
 
-1. Open a confidential GitHub *Security Advisory*.
-2. Email **lazaro98@duck.com**.
+For vulnerabilities that also affect upstream BeatDock, consider reporting them to the [original project](https://github.com/lazaroagomez/BeatDock/security) as well.
 
-I aim to acknowledge reports within **48&nbsp;hours** and, if confirmed, release a fix within **7&nbsp;days**.
-
-Thank you for helping keep BeatDock and its users safe! 
+Thank you for helping keep PulseBot and its users safe.

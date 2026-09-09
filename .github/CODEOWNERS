@@ -1,8 +1,7 @@
-# Set @lazaroagomez as the default owner for everything
-* @lazaroagomez
+# Default owner for this portfolio fork
+* @JoshuaDH1409
 
-# Dependency files
-package*.json @lazaroagomez
-Dockerfile @lazaroagomez
-docker-compose.yml @lazaroagomez
-.github/ @lazaroagomez
+package*.json @JoshuaDH1409
+Dockerfile @JoshuaDH1409
+docker-compose.yml @JoshuaDH1409
+.github/ @JoshuaDH1409

@@ -1,61 +1,25 @@
-# Contributing to BeatDock
+# Contributing to PulseBot
 
-Thanks for taking the time to contribute! Here are the basics to get you started.
+Thanks for your interest. This repo is a **personal portfolio fork** of [BeatDock](https://github.com/lazaroagomez/BeatDock). Small fixes and docs improvements are welcome.
 
-## Getting started
+## Setup
 
 ```bash
-# Fork the repo then clone your fork
-git clone https://github.com/<your-username>/BeatDock.git
-cd BeatDock
-npm install
+git clone https://github.com/<your-username>/DJ-Yoshi.git
+cd DJ-Yoshi
+cp .env.example .env
+# Add your Discord bot TOKEN
+docker compose up -d
 ```
 
-Copy `.env.example` to `.env` and fill in your Discord bot token. See the [README](../README.md#configuration) for all available options.
+Requirements: Node.js 22+, Docker, a Discord bot token with privileged intents enabled.
 
-## Available scripts
+## Guidelines
 
-| Command | Description |
-|---------|-------------|
-| `npm start` | Start the bot |
-| `npm run docker:build` | Build the Docker image locally |
-| `npm run docker:up` | Start services with Docker Compose |
-| `npm run docker:down` | Stop services |
-| `npm run docker:logs` | Tail container logs |
+- Keep changes focused and documented.
+- Preserve Apache-2.0 attribution (LICENSE, NOTICE, Credits).
+- Do not commit real secrets — use placeholders in `.env.example`.
 
-## Pull-request workflow
+## Questions
 
-1. Create a topic branch: `git checkout -b my-fix`.
-2. Make your changes and test manually.
-3. Commit with a clear message (see below).
-4. Push and open a PR against `main`.
-5. Fill out the PR template and link any related Issue.
-
-## Commit style
-
-Use the [Conventional Commits](https://www.conventionalcommits.org) standard:
-
-```
-feat(player): add seek command
-fix(search): handle empty results gracefully
-docs: update configuration table
-chore: bump Node version in Dockerfile
-```
-
-## Project structure
-
-```
-src/
-  commands/      Slash command definitions
-  events/        Discord event handlers
-  handlers/      Dynamic module loaders
-  interactions/  Component interaction handlers (buttons, menus)
-  utils/         Shared utilities and business logic
-  index.js       Application entry point
-locales/         Translation files (en, es, tr, it)
-docs/            GitHub Pages website
-```
-
-## Need help?
-
-Open an [Issue](https://github.com/lazaroagomez/BeatDock/issues), happy to help.
+Open an [Issue](https://github.com/JoshuaDH1409/DJ-Yoshi/issues).

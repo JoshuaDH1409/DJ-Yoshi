@@ -5,7 +5,7 @@ const logger = require('../utils/logger');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('invite')
-        .setDescription('Get a link to invite BeatDock to your server.'),
+        .setDescription('Get a link to invite PulseBot to your server.'),
     async execute(interaction) {
         const { client } = interaction;
         const lang = client.defaultLanguage;
@@ -17,7 +17,7 @@ module.exports = {
         const inviteUrl = generateInviteUrl(client.user.id);
 
         const embed = new EmbedBuilder()
-            .setColor(0x0099FF)
+            .setColor(0x7C3AED)
             .setTitle(client.languageManager.get(lang, 'INVITE_TITLE'))
             .setDescription(client.languageManager.get(lang, 'INVITE_DESCRIPTION'))
             .setThumbnail(client.user.displayAvatarURL());

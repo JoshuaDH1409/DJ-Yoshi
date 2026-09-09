@@ -37,7 +37,7 @@ async function fetchLyrics(title, artist, durationSec) {
     if (durationSec) params.set('duration', String(Math.round(durationSec)));
 
     const response = await fetch(`https://lrclib.net/api/get?${params}`, {
-        headers: { 'User-Agent': `BeatDock/${version}` },
+        headers: { 'User-Agent': `PulseBot/${version}` },
     });
 
     if (response.ok) {
@@ -50,7 +50,7 @@ async function fetchLyrics(title, artist, durationSec) {
     // Fallback: search endpoint
     const searchResponse = await fetch(
         `https://lrclib.net/api/search?q=${encodeURIComponent(`${title} ${artist}`)}`,
-        { headers: { 'User-Agent': `BeatDock/${version}` } }
+        { headers: { 'User-Agent': `PulseBot/${version}` } }
     );
 
     if (searchResponse.ok) {
@@ -114,7 +114,7 @@ module.exports = {
             }
 
             const embed = new EmbedBuilder()
-                .setColor(0x0099FF)
+                .setColor(0x7C3AED)
                 .setTitle(client.languageManager.get(lang, 'LYRICS_TITLE'))
                 .setDescription(lyrics)
                 .setFooter({ text: `${track.info?.title} — ${track.info?.author}` })

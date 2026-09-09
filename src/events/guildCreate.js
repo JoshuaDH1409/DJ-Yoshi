@@ -23,11 +23,11 @@ module.exports = {
         if (!channel) return;
 
         const embed = new EmbedBuilder()
-            .setColor(0x0099FF)
+            .setColor(0x7C3AED)
             .setTitle(client.languageManager.get(lang, 'WELCOME_TITLE'))
             .setDescription(client.languageManager.get(lang, 'WELCOME_DESCRIPTION'))
             .setThumbnail(client.user.displayAvatarURL())
-            .setFooter({ text: 'BeatDock' })
+            .setFooter({ text: 'PulseBot' })
             .setTimestamp();
 
         const row = new ActionRowBuilder()
@@ -35,7 +35,7 @@ module.exports = {
                 new ButtonBuilder()
                     .setLabel('GitHub')
                     .setStyle(ButtonStyle.Link)
-                    .setURL('https://github.com/lazaroagomez/BeatDock')
+                    .setURL('https://github.com/JoshuaDH1409/DJ-Yoshi')
             );
 
         try {

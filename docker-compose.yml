@@ -1,7 +1,7 @@
 services:
   bot:
-    container_name: beatdock
-    image: ghcr.io/lazaroagomez/beatdock:latest
+    container_name: pulsebot
+    image: ghcr.io/joshuadh1409/dj-yoshi:latest
     build:
       context: .
       dockerfile: Dockerfile
@@ -9,14 +9,14 @@ services:
       lavalink:
         condition: service_healthy
     networks:
-      - beatdock-network
+      - pulsebot-network
     env_file: .env
 
   lavalink:
-    container_name: beatdock-lavalink
+    container_name: pulsebot-lavalink
     image: ghcr.io/lavalink-devs/lavalink:4
     networks:
-      - beatdock-network
+      - pulsebot-network
     volumes:
       - ./application.yml:/opt/Lavalink/application.yml
     environment:
@@ -32,5 +32,5 @@ services:
       start_period: 30s
 
 networks:
-  beatdock-network:
-    name: beatdock_network
+  pulsebot-network:
+    name: pulsebot_network
