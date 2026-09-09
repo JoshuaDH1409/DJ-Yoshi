@@ -2,6 +2,12 @@
 
 Bot de música para Discord. Reproducción self-hosted con slash commands, cola, varios idiomas y Docker.
 
+<!-- screenshots -->
+## Vista
+
+![Docs PulseBot](docs/screenshots/docs-site.png)
+
+
 > Fork de [BeatDock](https://github.com/lazaroagomez/BeatDock) (Apache-2.0). Ver `LICENSE` y `NOTICE`.
 
 **EN:** Discord music bot (BeatDock fork) with Lavalink, queue controls, i18n and Docker Compose.
