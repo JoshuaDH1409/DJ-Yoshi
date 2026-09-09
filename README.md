@@ -7,6 +7,15 @@ Bot de música para Discord. Reproducción self-hosted con slash commands, cola,
 <!-- screenshots -->
 ## Vista
 
+![PulseBot en Discord](docs/screenshots/discord.png)
+
+![Docs](docs/screenshots/docs-site.png)
+
+**Demo docs:** https://joshuadh1409.github.io/pulsebot/
+
+
+## Vista
+
 ![Docs PulseBot](docs/screenshots/docs-site.png)
 
 
